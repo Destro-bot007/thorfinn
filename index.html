@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Marine</title>
+  <title>Xavier | Développeur Web Junior</title>
   <style>
-    /* Dégradé bleu marine sur fond complet */
     body {
       margin: 0;
       padding: 0;
@@ -21,8 +20,17 @@
       padding: 20px;
       text-align: center;
       background: rgba(0, 0, 0, 0.3);
-      font-size: 1.5rem;
-      font-weight: bold;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+      color: #ccc;
     }
 
     nav {
@@ -48,15 +56,21 @@
 
     main {
       flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    section {
+      max-width: 800px;
       text-align: center;
     }
 
-    .content {
-      max-width: 600px;
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
     }
 
     footer {
@@ -66,15 +80,14 @@
       font-size: 0.9rem;
     }
 
-    /* Responsive design */
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
         gap: 10px;
       }
 
-      header {
-        font-size: 1.2rem;
+      header h1 {
+        font-size: 1.5rem;
       }
 
       main {
@@ -84,26 +97,49 @@
   </style>
 </head>
 <body>
+
   <header>
-    Mon Site Professionnel
+    <h1>Xavier Atangana</h1>
+    <p>Développeur Web Junior</p>
   </header>
 
   <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Services</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#projets">Projets</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <main>
-    <div class="content">
-      <h1>Bienvenue</h1>
-      <p>Voici une page web responsive avec un beau dégradé bleu marine.</p>
-    </div>
+    <section id="accueil">
+      <h2>Bienvenue</h2>
+      <p>Je suis un développeur junior passionné par le développement web. J’apprends HTML, CSS, JavaScript et je construis des petits projets pour améliorer mes compétences chaque jour.</p>
+    </section>
+
+    <section id="projets">
+      <h2>Mes Projets</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li><strong>Calculatrice JS</strong> – Une application simple de calcul en JavaScript</li>
+        <li><strong>ToDo List</strong> – Application de tâches avec stockage local</li>
+        <li><strong>Portfolio</strong> – Ce site pour présenter mes compétences</li>
+      </ul>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos de moi</h2>
+      <p>Je suis basé au Cameroun et j'apprends activement le développement front-end. Je suis motivé à rejoindre une équipe, contribuer à des projets open-source ou décrocher un stage dans le développement web.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : xavier.dev@example.com</p>
+      <p>GitHub : <a href="https://github.com/Destro-bot007" target="_blank" style="color: #aadfff;">@Destro-bot007</a></p>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 - Tous droits réservés.
+    &copy; 2025 - Xavier Atangana. Tous droits réservés.
   </footer>
+
 </body>
 </html>
