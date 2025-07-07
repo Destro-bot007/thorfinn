@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Marine</title>
+  <style>
+    /* Dégradé bleu marine sur fond complet */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0b1c36, #173a5e);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 600px;
+    }
+
+    footer {
+      padding: 15px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header {
+        font-size: 1.2rem;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Mon Site Professionnel
+  </header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Services</a>
+    <a href="#">À propos</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <div class="content">
+      <h1>Bienvenue</h1>
+      <p>Voici une page web responsive avec un beau dégradé bleu marine.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 - Tous droits réservés.
+  </footer>
+</body>
+</html>
